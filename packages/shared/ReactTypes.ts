@@ -11,3 +11,5 @@ export interface ReactElementType {
 	props: Props;
 	__mark: symbol | number;
 }
+
+export type Action<State> = State | ((preState: State) => State);
